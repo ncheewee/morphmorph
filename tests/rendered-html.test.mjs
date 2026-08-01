@@ -72,7 +72,9 @@ test("ships a self-contained Evolution Lab and deployment workflow", async () =>
   assert.match(pagesHtml, /morphmorph\.evolution-lab\.v2/);
   assert.match(pagesHtml, /founderDistance\(x,f\)>2\.15/);
   assert.match(pagesHtml, /for\(let g=0;g<10;g\+\+\)/);
-  assert.match(pagesHtml, /Codex Build 0\.2\.2/);
+  assert.match(pagesHtml, /Codex Build 0\.3\.0/);
+  assert.match(pagesHtml, /function polishedCreature\(/);
+  assert.match(pagesHtml, /canvasCreature=polishedCreature/);
   assert.match(pagesHtml, /Reject and regenerate below/);
   assert.match(pagesHtml, /FORMS=\['winglets','claws','antennae','halo','tailfan','crystal','frills','eyes'\]/);
   assert.match(pagesHtml, /github\.com\/ncheewee\/morphmorph\/issues\/new/);
