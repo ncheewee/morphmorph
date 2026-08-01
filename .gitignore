@@ -40,3 +40,6 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
+
+# Local full-resolution Codex render masters; Pages ships compressed WebP copies.
+/docs/lab/*.png

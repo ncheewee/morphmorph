@@ -1,5 +1,21 @@
-const CACHE = "morphmorph-pwa-v7";
-const ASSETS = ["./", "./index.html", "./manifest.webmanifest", "./icon.svg"];
+const CACHE = "morphmorph-pwa-v8";
+const ASSETS = [
+  "./",
+  "./index.html",
+  "./manifest.webmanifest",
+  "./icon.svg",
+  "./lab/genomes.json",
+  "./lab/g0.webp",
+  "./lab/g1.webp",
+  "./lab/g2.webp",
+  "./lab/g3.webp",
+  "./lab/g4.webp",
+  "./lab/g5.webp",
+  "./lab/g6.webp",
+  "./lab/g7.webp",
+  "./lab/g8.webp",
+  "./lab/g9.webp",
+];
 
 self.addEventListener("install", event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));

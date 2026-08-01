@@ -1,0 +1,868 @@
+{
+  "version": 1,
+  "seed": "morphmorph-codex-static-v1",
+  "style": "premium original botanical storybook creature illustration; clean art-directed silhouette and dimensional anatomy; soft cel-painted gradients with delicate leaf veins; controlled luminous accents, dark teal circular habitat vignette; full body visible at the same scale and camera distance; no text, labels, logos, glitter, noise, or copyrighted characters",
+  "lineages": [
+    {
+      "id": "luma",
+      "name": "Luma",
+      "bodyPlan": "floating plant-jelly organism",
+      "identity": [
+        "translucent mint spherical bell",
+        "one large luminous central teal eye",
+        "two broad leaf-fins",
+        "a crown sprout with paired leaves",
+        "nine elegant cream-and-coral tendrils",
+        "no feet or terrestrial legs"
+      ],
+      "generations": [
+        {
+          "generation": 0,
+          "title": "Luma seed",
+          "mutation": "Founder anchor",
+          "change": "No mutation. Establish the immutable lineage identity.",
+          "accumulated": []
+        },
+        {
+          "generation": 1,
+          "title": "Crown fruit",
+          "mutation": "Crown fruit",
+          "change": "grow two small coral seed-fruits beneath the crown leaves",
+          "accumulated": [
+            "Crown fruit"
+          ]
+        },
+        {
+          "generation": 2,
+          "title": "Orbital motes",
+          "mutation": "Orbital motes",
+          "change": "add five restrained glowing seed motes orbiting just outside the bell",
+          "accumulated": [
+            "Crown fruit",
+            "Orbital motes"
+          ]
+        },
+        {
+          "generation": 3,
+          "title": "Iris rings",
+          "mutation": "Iris rings",
+          "change": "add two concentric luminous rings inside the single central eye",
+          "accumulated": [
+            "Crown fruit",
+            "Orbital motes",
+            "Iris rings"
+          ]
+        },
+        {
+          "generation": 4,
+          "title": "Bell scallops",
+          "mutation": "Bell scallops",
+          "change": "develop a clearly visible scalloped coral rim along the underside of the bell",
+          "accumulated": [
+            "Crown fruit",
+            "Orbital motes",
+            "Iris rings",
+            "Bell scallops"
+          ]
+        },
+        {
+          "generation": 5,
+          "title": "Lantern crown",
+          "mutation": "Lantern crown",
+          "change": "grow a second tier of tiny luminous seed-orbs around the crown sprout",
+          "accumulated": [
+            "Crown fruit",
+            "Orbital motes",
+            "Iris rings",
+            "Bell scallops",
+            "Lantern crown"
+          ]
+        },
+        {
+          "generation": 6,
+          "title": "Leaf sails",
+          "mutation": "Leaf sails",
+          "change": "lengthen both leaf-fins into swept-back translucent sails",
+          "accumulated": [
+            "Crown fruit",
+            "Orbital motes",
+            "Iris rings",
+            "Bell scallops",
+            "Lantern crown",
+            "Leaf sails"
+          ]
+        },
+        {
+          "generation": 7,
+          "title": "Halo lobes",
+          "mutation": "Halo lobes",
+          "change": "add three translucent petal lobes behind the spherical bell",
+          "accumulated": [
+            "Crown fruit",
+            "Orbital motes",
+            "Iris rings",
+            "Bell scallops",
+            "Lantern crown",
+            "Leaf sails",
+            "Halo lobes"
+          ]
+        },
+        {
+          "generation": 8,
+          "title": "Vine braid",
+          "mutation": "Vine braid",
+          "change": "braid two central tendrils into one thicker twisting vine while keeping the others separate",
+          "accumulated": [
+            "Crown fruit",
+            "Orbital motes",
+            "Iris rings",
+            "Bell scallops",
+            "Lantern crown",
+            "Leaf sails",
+            "Halo lobes",
+            "Vine braid"
+          ]
+        },
+        {
+          "generation": 9,
+          "title": "Tendril bloom",
+          "mutation": "Tendril bloom",
+          "change": "split the three longest tendrils into graceful forked tips with coral buds",
+          "accumulated": [
+            "Crown fruit",
+            "Orbital motes",
+            "Iris rings",
+            "Bell scallops",
+            "Lantern crown",
+            "Leaf sails",
+            "Halo lobes",
+            "Vine braid",
+            "Tendril bloom"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mori",
+      "name": "Mori",
+      "bodyPlan": "compact left-facing botanical quadruped",
+      "identity": [
+        "warm cream body with mint markings",
+        "one large visible blue side eye",
+        "layered mint leaf mane",
+        "four profile legs with side-oriented feet",
+        "long high-curled botanical tail",
+        "small gentle muzzle and coral cheek"
+      ],
+      "generations": [
+        {
+          "generation": 0,
+          "title": "Mori seed",
+          "mutation": "Founder anchor",
+          "change": "No mutation. Establish the immutable lineage identity.",
+          "accumulated": []
+        },
+        {
+          "generation": 1,
+          "title": "Brow horns",
+          "mutation": "Brow horns",
+          "change": "add two smooth cream-colored branch horns emerging through the mane",
+          "accumulated": [
+            "Brow horns"
+          ]
+        },
+        {
+          "generation": 2,
+          "title": "Petal guards",
+          "mutation": "Petal guards",
+          "change": "add layered leaf guards around the front ankles without exposing paw pads",
+          "accumulated": [
+            "Brow horns",
+            "Petal guards"
+          ]
+        },
+        {
+          "generation": 3,
+          "title": "Spring legs",
+          "mutation": "Spring legs",
+          "change": "lengthen the rear legs and raise the hips into a more agile springing posture",
+          "accumulated": [
+            "Brow horns",
+            "Petal guards",
+            "Spring legs"
+          ]
+        },
+        {
+          "generation": 4,
+          "title": "Glider buds",
+          "mutation": "Glider buds",
+          "change": "grow two small folded leaf-wing buds along the upper back",
+          "accumulated": [
+            "Brow horns",
+            "Petal guards",
+            "Spring legs",
+            "Glider buds"
+          ]
+        },
+        {
+          "generation": 5,
+          "title": "Wing unfurl",
+          "mutation": "Wing unfurl",
+          "change": "unfurl the existing wing buds into short elegant leaf wings, still smaller than the body",
+          "accumulated": [
+            "Brow horns",
+            "Petal guards",
+            "Spring legs",
+            "Glider buds",
+            "Wing unfurl"
+          ]
+        },
+        {
+          "generation": 6,
+          "title": "Mane canopy",
+          "mutation": "Mane canopy",
+          "change": "expand the leaf mane into a broader layered canopy flowing over the shoulders",
+          "accumulated": [
+            "Brow horns",
+            "Petal guards",
+            "Spring legs",
+            "Glider buds",
+            "Wing unfurl",
+            "Mane canopy"
+          ]
+        },
+        {
+          "generation": 7,
+          "title": "Moon markings",
+          "mutation": "Moon markings",
+          "change": "develop three clear mint crescent markings along the cream flank",
+          "accumulated": [
+            "Brow horns",
+            "Petal guards",
+            "Spring legs",
+            "Glider buds",
+            "Wing unfurl",
+            "Mane canopy",
+            "Moon markings"
+          ]
+        },
+        {
+          "generation": 8,
+          "title": "Tail blossom",
+          "mutation": "Tail blossom",
+          "change": "split the tail tip into a three-leaf blossom while preserving the long curl",
+          "accumulated": [
+            "Brow horns",
+            "Petal guards",
+            "Spring legs",
+            "Glider buds",
+            "Wing unfurl",
+            "Mane canopy",
+            "Moon markings",
+            "Tail blossom"
+          ]
+        },
+        {
+          "generation": 9,
+          "title": "Dorsal garden",
+          "mutation": "Dorsal garden",
+          "change": "grow a short line of three tiny botanical sprouts down the spine",
+          "accumulated": [
+            "Brow horns",
+            "Petal guards",
+            "Spring legs",
+            "Glider buds",
+            "Wing unfurl",
+            "Mane canopy",
+            "Moon markings",
+            "Tail blossom",
+            "Dorsal garden"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sora",
+      "name": "Sora",
+      "bodyPlan": "graceful avian-reptile botanical creature",
+      "identity": [
+        "upright elegant posture",
+        "two expressive blue eyes and a short coral beak",
+        "broad layered mint leaf wings",
+        "two long angled coral bird legs",
+        "cream feathered chest",
+        "sweeping mint-and-coral ribbon tail"
+      ],
+      "generations": [
+        {
+          "generation": 0,
+          "title": "Sora seed",
+          "mutation": "Founder anchor",
+          "change": "No mutation. Establish the immutable lineage identity.",
+          "accumulated": []
+        },
+        {
+          "generation": 1,
+          "title": "Sun chest",
+          "mutation": "Sun chest",
+          "change": "form a restrained luminous branching sun motif on the cream chest",
+          "accumulated": [
+            "Sun chest"
+          ]
+        },
+        {
+          "generation": 2,
+          "title": "Wing fingers",
+          "mutation": "Wing fingers",
+          "change": "separate each wing into five longer individually readable leaf-feather fingers",
+          "accumulated": [
+            "Sun chest",
+            "Wing fingers"
+          ]
+        },
+        {
+          "generation": 3,
+          "title": "Leg fronds",
+          "mutation": "Leg fronds",
+          "change": "add small backward-facing leaf fins above both ankles",
+          "accumulated": [
+            "Sun chest",
+            "Wing fingers",
+            "Leg fronds"
+          ]
+        },
+        {
+          "generation": 4,
+          "title": "Tail lanterns",
+          "mutation": "Tail lanterns",
+          "change": "grow three small luminous seed pods along the outer tail ribbon",
+          "accumulated": [
+            "Sun chest",
+            "Wing fingers",
+            "Leg fronds",
+            "Tail lanterns"
+          ]
+        },
+        {
+          "generation": 5,
+          "title": "Crown bloom",
+          "mutation": "Crown bloom",
+          "change": "grow a coral three-petal bloom from the existing head crest",
+          "accumulated": [
+            "Sun chest",
+            "Wing fingers",
+            "Leg fronds",
+            "Tail lanterns",
+            "Crown bloom"
+          ]
+        },
+        {
+          "generation": 6,
+          "title": "Beak crest",
+          "mutation": "Beak crest",
+          "change": "extend the upper beak into a small elegant coral crest without changing the face",
+          "accumulated": [
+            "Sun chest",
+            "Wing fingers",
+            "Leg fronds",
+            "Tail lanterns",
+            "Crown bloom",
+            "Beak crest"
+          ]
+        },
+        {
+          "generation": 7,
+          "title": "Neck mantle",
+          "mutation": "Neck mantle",
+          "change": "develop a layered cream-and-mint leaf mantle around the lower neck",
+          "accumulated": [
+            "Sun chest",
+            "Wing fingers",
+            "Leg fronds",
+            "Tail lanterns",
+            "Crown bloom",
+            "Beak crest",
+            "Neck mantle"
+          ]
+        },
+        {
+          "generation": 8,
+          "title": "Tail fork",
+          "mutation": "Tail fork",
+          "change": "bifurcate the sweeping tail into two asymmetrical ribbon fronds",
+          "accumulated": [
+            "Sun chest",
+            "Wing fingers",
+            "Leg fronds",
+            "Tail lanterns",
+            "Crown bloom",
+            "Beak crest",
+            "Neck mantle",
+            "Tail fork"
+          ]
+        },
+        {
+          "generation": 9,
+          "title": "Secondary wings",
+          "mutation": "Secondary wings",
+          "change": "add a smaller lower pair of folded leaf wings beneath the main wings",
+          "accumulated": [
+            "Sun chest",
+            "Wing fingers",
+            "Leg fronds",
+            "Tail lanterns",
+            "Crown bloom",
+            "Beak crest",
+            "Neck mantle",
+            "Tail fork",
+            "Secondary wings"
+          ]
+        }
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "generation": 0,
+      "asset": "./lab/g0.webp",
+      "creatures": [
+        {
+          "generation": 0,
+          "title": "Luma seed",
+          "mutation": "Founder anchor",
+          "change": "No mutation. Establish the immutable lineage identity.",
+          "accumulated": []
+        },
+        {
+          "generation": 0,
+          "title": "Mori seed",
+          "mutation": "Founder anchor",
+          "change": "No mutation. Establish the immutable lineage identity.",
+          "accumulated": []
+        },
+        {
+          "generation": 0,
+          "title": "Sora seed",
+          "mutation": "Founder anchor",
+          "change": "No mutation. Establish the immutable lineage identity.",
+          "accumulated": []
+        }
+      ],
+      "renderPrompt": "Create exactly three separate full-body original creatures in three evenly spaced circular habitat vignettes. premium original botanical storybook creature illustration; clean art-directed silhouette and dimensional anatomy; soft cel-painted gradients with delicate leaf veins; controlled luminous accents, dark teal circular habitat vignette; full body visible at the same scale and camera distance; no text, labels, logos, glitter, noise, or copyrighted characters"
+    },
+    {
+      "generation": 1,
+      "asset": "./lab/g1.webp",
+      "creatures": [
+        {
+          "generation": 1,
+          "title": "Crown fruit",
+          "mutation": "Crown fruit",
+          "change": "grow two small coral seed-fruits beneath the crown leaves",
+          "accumulated": [
+            "Crown fruit"
+          ]
+        },
+        {
+          "generation": 1,
+          "title": "Brow horns",
+          "mutation": "Brow horns",
+          "change": "add two smooth cream-colored branch horns emerging through the mane",
+          "accumulated": [
+            "Brow horns"
+          ]
+        },
+        {
+          "generation": 1,
+          "title": "Sun chest",
+          "mutation": "Sun chest",
+          "change": "form a restrained luminous branching sun motif on the cream chest",
+          "accumulated": [
+            "Sun chest"
+          ]
+        }
+      ],
+      "renderPrompt": "Edit the previous three-creature sheet into generation 1.\nPreserve the exact left-to-right lineage order, identities, body plans, framing, habitat layout, lighting, rendering quality, and camera distance.\nApply only these mutations, making each unmistakably visible at thumbnail size:\n1. Luma: grow two small coral seed-fruits beneath the crown leaves.\n2. Mori: add two smooth cream-colored branch horns emerging through the mane.\n3. Sora: form a restrained luminous branching sun motif on the cream chest.\nDo not redesign faces, swap anatomy between lineages, add text, or introduce unrelated mutations.\npremium original botanical storybook creature illustration; clean art-directed silhouette and dimensional anatomy; soft cel-painted gradients with delicate leaf veins; controlled luminous accents, dark teal circular habitat vignette; full body visible at the same scale and camera distance; no text, labels, logos, glitter, noise, or copyrighted characters"
+    },
+    {
+      "generation": 2,
+      "asset": "./lab/g2.webp",
+      "creatures": [
+        {
+          "generation": 2,
+          "title": "Orbital motes",
+          "mutation": "Orbital motes",
+          "change": "add five restrained glowing seed motes orbiting just outside the bell",
+          "accumulated": [
+            "Crown fruit",
+            "Orbital motes"
+          ]
+        },
+        {
+          "generation": 2,
+          "title": "Petal guards",
+          "mutation": "Petal guards",
+          "change": "add layered leaf guards around the front ankles without exposing paw pads",
+          "accumulated": [
+            "Brow horns",
+            "Petal guards"
+          ]
+        },
+        {
+          "generation": 2,
+          "title": "Wing fingers",
+          "mutation": "Wing fingers",
+          "change": "separate each wing into five longer individually readable leaf-feather fingers",
+          "accumulated": [
+            "Sun chest",
+            "Wing fingers"
+          ]
+        }
+      ],
+      "renderPrompt": "Edit the previous three-creature sheet into generation 2.\nPreserve the exact left-to-right lineage order, identities, body plans, framing, habitat layout, lighting, rendering quality, and camera distance.\nApply only these mutations, making each unmistakably visible at thumbnail size:\n1. Luma: add five restrained glowing seed motes orbiting just outside the bell.\n2. Mori: add layered leaf guards around the front ankles without exposing paw pads.\n3. Sora: separate each wing into five longer individually readable leaf-feather fingers.\nDo not redesign faces, swap anatomy between lineages, add text, or introduce unrelated mutations.\npremium original botanical storybook creature illustration; clean art-directed silhouette and dimensional anatomy; soft cel-painted gradients with delicate leaf veins; controlled luminous accents, dark teal circular habitat vignette; full body visible at the same scale and camera distance; no text, labels, logos, glitter, noise, or copyrighted characters"
+    },
+    {
+      "generation": 3,
+      "asset": "./lab/g3.webp",
+      "creatures": [
+        {
+          "generation": 3,
+          "title": "Iris rings",
+          "mutation": "Iris rings",
+          "change": "add two concentric luminous rings inside the single central eye",
+          "accumulated": [
+            "Crown fruit",
+            "Orbital motes",
+            "Iris rings"
+          ]
+        },
+        {
+          "generation": 3,
+          "title": "Spring legs",
+          "mutation": "Spring legs",
+          "change": "lengthen the rear legs and raise the hips into a more agile springing posture",
+          "accumulated": [
+            "Brow horns",
+            "Petal guards",
+            "Spring legs"
+          ]
+        },
+        {
+          "generation": 3,
+          "title": "Leg fronds",
+          "mutation": "Leg fronds",
+          "change": "add small backward-facing leaf fins above both ankles",
+          "accumulated": [
+            "Sun chest",
+            "Wing fingers",
+            "Leg fronds"
+          ]
+        }
+      ],
+      "renderPrompt": "Edit the previous three-creature sheet into generation 3.\nPreserve the exact left-to-right lineage order, identities, body plans, framing, habitat layout, lighting, rendering quality, and camera distance.\nApply only these mutations, making each unmistakably visible at thumbnail size:\n1. Luma: add two concentric luminous rings inside the single central eye.\n2. Mori: lengthen the rear legs and raise the hips into a more agile springing posture.\n3. Sora: add small backward-facing leaf fins above both ankles.\nDo not redesign faces, swap anatomy between lineages, add text, or introduce unrelated mutations.\npremium original botanical storybook creature illustration; clean art-directed silhouette and dimensional anatomy; soft cel-painted gradients with delicate leaf veins; controlled luminous accents, dark teal circular habitat vignette; full body visible at the same scale and camera distance; no text, labels, logos, glitter, noise, or copyrighted characters"
+    },
+    {
+      "generation": 4,
+      "asset": "./lab/g4.webp",
+      "creatures": [
+        {
+          "generation": 4,
+          "title": "Bell scallops",
+          "mutation": "Bell scallops",
+          "change": "develop a clearly visible scalloped coral rim along the underside of the bell",
+          "accumulated": [
+            "Crown fruit",
+            "Orbital motes",
+            "Iris rings",
+            "Bell scallops"
+          ]
+        },
+        {
+          "generation": 4,
+          "title": "Glider buds",
+          "mutation": "Glider buds",
+          "change": "grow two small folded leaf-wing buds along the upper back",
+          "accumulated": [
+            "Brow horns",
+            "Petal guards",
+            "Spring legs",
+            "Glider buds"
+          ]
+        },
+        {
+          "generation": 4,
+          "title": "Tail lanterns",
+          "mutation": "Tail lanterns",
+          "change": "grow three small luminous seed pods along the outer tail ribbon",
+          "accumulated": [
+            "Sun chest",
+            "Wing fingers",
+            "Leg fronds",
+            "Tail lanterns"
+          ]
+        }
+      ],
+      "renderPrompt": "Edit the previous three-creature sheet into generation 4.\nPreserve the exact left-to-right lineage order, identities, body plans, framing, habitat layout, lighting, rendering quality, and camera distance.\nApply only these mutations, making each unmistakably visible at thumbnail size:\n1. Luma: develop a clearly visible scalloped coral rim along the underside of the bell.\n2. Mori: grow two small folded leaf-wing buds along the upper back.\n3. Sora: grow three small luminous seed pods along the outer tail ribbon.\nDo not redesign faces, swap anatomy between lineages, add text, or introduce unrelated mutations.\npremium original botanical storybook creature illustration; clean art-directed silhouette and dimensional anatomy; soft cel-painted gradients with delicate leaf veins; controlled luminous accents, dark teal circular habitat vignette; full body visible at the same scale and camera distance; no text, labels, logos, glitter, noise, or copyrighted characters"
+    },
+    {
+      "generation": 5,
+      "asset": "./lab/g5.webp",
+      "creatures": [
+        {
+          "generation": 5,
+          "title": "Lantern crown",
+          "mutation": "Lantern crown",
+          "change": "grow a second tier of tiny luminous seed-orbs around the crown sprout",
+          "accumulated": [
+            "Crown fruit",
+            "Orbital motes",
+            "Iris rings",
+            "Bell scallops",
+            "Lantern crown"
+          ]
+        },
+        {
+          "generation": 5,
+          "title": "Wing unfurl",
+          "mutation": "Wing unfurl",
+          "change": "unfurl the existing wing buds into short elegant leaf wings, still smaller than the body",
+          "accumulated": [
+            "Brow horns",
+            "Petal guards",
+            "Spring legs",
+            "Glider buds",
+            "Wing unfurl"
+          ]
+        },
+        {
+          "generation": 5,
+          "title": "Crown bloom",
+          "mutation": "Crown bloom",
+          "change": "grow a coral three-petal bloom from the existing head crest",
+          "accumulated": [
+            "Sun chest",
+            "Wing fingers",
+            "Leg fronds",
+            "Tail lanterns",
+            "Crown bloom"
+          ]
+        }
+      ],
+      "renderPrompt": "Edit the previous three-creature sheet into generation 5.\nPreserve the exact left-to-right lineage order, identities, body plans, framing, habitat layout, lighting, rendering quality, and camera distance.\nApply only these mutations, making each unmistakably visible at thumbnail size:\n1. Luma: grow a second tier of tiny luminous seed-orbs around the crown sprout.\n2. Mori: unfurl the existing wing buds into short elegant leaf wings, still smaller than the body.\n3. Sora: grow a coral three-petal bloom from the existing head crest.\nDo not redesign faces, swap anatomy between lineages, add text, or introduce unrelated mutations.\npremium original botanical storybook creature illustration; clean art-directed silhouette and dimensional anatomy; soft cel-painted gradients with delicate leaf veins; controlled luminous accents, dark teal circular habitat vignette; full body visible at the same scale and camera distance; no text, labels, logos, glitter, noise, or copyrighted characters"
+    },
+    {
+      "generation": 6,
+      "asset": "./lab/g6.webp",
+      "creatures": [
+        {
+          "generation": 6,
+          "title": "Leaf sails",
+          "mutation": "Leaf sails",
+          "change": "lengthen both leaf-fins into swept-back translucent sails",
+          "accumulated": [
+            "Crown fruit",
+            "Orbital motes",
+            "Iris rings",
+            "Bell scallops",
+            "Lantern crown",
+            "Leaf sails"
+          ]
+        },
+        {
+          "generation": 6,
+          "title": "Mane canopy",
+          "mutation": "Mane canopy",
+          "change": "expand the leaf mane into a broader layered canopy flowing over the shoulders",
+          "accumulated": [
+            "Brow horns",
+            "Petal guards",
+            "Spring legs",
+            "Glider buds",
+            "Wing unfurl",
+            "Mane canopy"
+          ]
+        },
+        {
+          "generation": 6,
+          "title": "Beak crest",
+          "mutation": "Beak crest",
+          "change": "extend the upper beak into a small elegant coral crest without changing the face",
+          "accumulated": [
+            "Sun chest",
+            "Wing fingers",
+            "Leg fronds",
+            "Tail lanterns",
+            "Crown bloom",
+            "Beak crest"
+          ]
+        }
+      ],
+      "renderPrompt": "Edit the previous three-creature sheet into generation 6.\nPreserve the exact left-to-right lineage order, identities, body plans, framing, habitat layout, lighting, rendering quality, and camera distance.\nApply only these mutations, making each unmistakably visible at thumbnail size:\n1. Luma: lengthen both leaf-fins into swept-back translucent sails.\n2. Mori: expand the leaf mane into a broader layered canopy flowing over the shoulders.\n3. Sora: extend the upper beak into a small elegant coral crest without changing the face.\nDo not redesign faces, swap anatomy between lineages, add text, or introduce unrelated mutations.\npremium original botanical storybook creature illustration; clean art-directed silhouette and dimensional anatomy; soft cel-painted gradients with delicate leaf veins; controlled luminous accents, dark teal circular habitat vignette; full body visible at the same scale and camera distance; no text, labels, logos, glitter, noise, or copyrighted characters"
+    },
+    {
+      "generation": 7,
+      "asset": "./lab/g7.webp",
+      "creatures": [
+        {
+          "generation": 7,
+          "title": "Halo lobes",
+          "mutation": "Halo lobes",
+          "change": "add three translucent petal lobes behind the spherical bell",
+          "accumulated": [
+            "Crown fruit",
+            "Orbital motes",
+            "Iris rings",
+            "Bell scallops",
+            "Lantern crown",
+            "Leaf sails",
+            "Halo lobes"
+          ]
+        },
+        {
+          "generation": 7,
+          "title": "Moon markings",
+          "mutation": "Moon markings",
+          "change": "develop three clear mint crescent markings along the cream flank",
+          "accumulated": [
+            "Brow horns",
+            "Petal guards",
+            "Spring legs",
+            "Glider buds",
+            "Wing unfurl",
+            "Mane canopy",
+            "Moon markings"
+          ]
+        },
+        {
+          "generation": 7,
+          "title": "Neck mantle",
+          "mutation": "Neck mantle",
+          "change": "develop a layered cream-and-mint leaf mantle around the lower neck",
+          "accumulated": [
+            "Sun chest",
+            "Wing fingers",
+            "Leg fronds",
+            "Tail lanterns",
+            "Crown bloom",
+            "Beak crest",
+            "Neck mantle"
+          ]
+        }
+      ],
+      "renderPrompt": "Edit the previous three-creature sheet into generation 7.\nPreserve the exact left-to-right lineage order, identities, body plans, framing, habitat layout, lighting, rendering quality, and camera distance.\nApply only these mutations, making each unmistakably visible at thumbnail size:\n1. Luma: add three translucent petal lobes behind the spherical bell.\n2. Mori: develop three clear mint crescent markings along the cream flank.\n3. Sora: develop a layered cream-and-mint leaf mantle around the lower neck.\nDo not redesign faces, swap anatomy between lineages, add text, or introduce unrelated mutations.\npremium original botanical storybook creature illustration; clean art-directed silhouette and dimensional anatomy; soft cel-painted gradients with delicate leaf veins; controlled luminous accents, dark teal circular habitat vignette; full body visible at the same scale and camera distance; no text, labels, logos, glitter, noise, or copyrighted characters"
+    },
+    {
+      "generation": 8,
+      "asset": "./lab/g8.webp",
+      "creatures": [
+        {
+          "generation": 8,
+          "title": "Vine braid",
+          "mutation": "Vine braid",
+          "change": "braid two central tendrils into one thicker twisting vine while keeping the others separate",
+          "accumulated": [
+            "Crown fruit",
+            "Orbital motes",
+            "Iris rings",
+            "Bell scallops",
+            "Lantern crown",
+            "Leaf sails",
+            "Halo lobes",
+            "Vine braid"
+          ]
+        },
+        {
+          "generation": 8,
+          "title": "Tail blossom",
+          "mutation": "Tail blossom",
+          "change": "split the tail tip into a three-leaf blossom while preserving the long curl",
+          "accumulated": [
+            "Brow horns",
+            "Petal guards",
+            "Spring legs",
+            "Glider buds",
+            "Wing unfurl",
+            "Mane canopy",
+            "Moon markings",
+            "Tail blossom"
+          ]
+        },
+        {
+          "generation": 8,
+          "title": "Tail fork",
+          "mutation": "Tail fork",
+          "change": "bifurcate the sweeping tail into two asymmetrical ribbon fronds",
+          "accumulated": [
+            "Sun chest",
+            "Wing fingers",
+            "Leg fronds",
+            "Tail lanterns",
+            "Crown bloom",
+            "Beak crest",
+            "Neck mantle",
+            "Tail fork"
+          ]
+        }
+      ],
+      "renderPrompt": "Edit the previous three-creature sheet into generation 8.\nPreserve the exact left-to-right lineage order, identities, body plans, framing, habitat layout, lighting, rendering quality, and camera distance.\nApply only these mutations, making each unmistakably visible at thumbnail size:\n1. Luma: braid two central tendrils into one thicker twisting vine while keeping the others separate.\n2. Mori: split the tail tip into a three-leaf blossom while preserving the long curl.\n3. Sora: bifurcate the sweeping tail into two asymmetrical ribbon fronds.\nDo not redesign faces, swap anatomy between lineages, add text, or introduce unrelated mutations.\npremium original botanical storybook creature illustration; clean art-directed silhouette and dimensional anatomy; soft cel-painted gradients with delicate leaf veins; controlled luminous accents, dark teal circular habitat vignette; full body visible at the same scale and camera distance; no text, labels, logos, glitter, noise, or copyrighted characters"
+    },
+    {
+      "generation": 9,
+      "asset": "./lab/g9.webp",
+      "creatures": [
+        {
+          "generation": 9,
+          "title": "Tendril bloom",
+          "mutation": "Tendril bloom",
+          "change": "split the three longest tendrils into graceful forked tips with coral buds",
+          "accumulated": [
+            "Crown fruit",
+            "Orbital motes",
+            "Iris rings",
+            "Bell scallops",
+            "Lantern crown",
+            "Leaf sails",
+            "Halo lobes",
+            "Vine braid",
+            "Tendril bloom"
+          ]
+        },
+        {
+          "generation": 9,
+          "title": "Dorsal garden",
+          "mutation": "Dorsal garden",
+          "change": "grow a short line of three tiny botanical sprouts down the spine",
+          "accumulated": [
+            "Brow horns",
+            "Petal guards",
+            "Spring legs",
+            "Glider buds",
+            "Wing unfurl",
+            "Mane canopy",
+            "Moon markings",
+            "Tail blossom",
+            "Dorsal garden"
+          ]
+        },
+        {
+          "generation": 9,
+          "title": "Secondary wings",
+          "mutation": "Secondary wings",
+          "change": "add a smaller lower pair of folded leaf wings beneath the main wings",
+          "accumulated": [
+            "Sun chest",
+            "Wing fingers",
+            "Leg fronds",
+            "Tail lanterns",
+            "Crown bloom",
+            "Beak crest",
+            "Neck mantle",
+            "Tail fork",
+            "Secondary wings"
+          ]
+        }
+      ],
+      "renderPrompt": "Edit the previous three-creature sheet into generation 9.\nPreserve the exact left-to-right lineage order, identities, body plans, framing, habitat layout, lighting, rendering quality, and camera distance.\nApply only these mutations, making each unmistakably visible at thumbnail size:\n1. Luma: split the three longest tendrils into graceful forked tips with coral buds.\n2. Mori: grow a short line of three tiny botanical sprouts down the spine.\n3. Sora: add a smaller lower pair of folded leaf wings beneath the main wings.\nDo not redesign faces, swap anatomy between lineages, add text, or introduce unrelated mutations.\npremium original botanical storybook creature illustration; clean art-directed silhouette and dimensional anatomy; soft cel-painted gradients with delicate leaf veins; controlled luminous accents, dark teal circular habitat vignette; full body visible at the same scale and camera distance; no text, labels, logos, glitter, noise, or copyrighted characters"
+    }
+  ]
+}

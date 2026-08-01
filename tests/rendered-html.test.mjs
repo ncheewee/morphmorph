@@ -61,29 +61,41 @@ test("contains the procedural evolution and device-local persistence loop", asyn
   assert.doesNotMatch(css, /url\([^)]*generated_images/);
 });
 
-test("ships a self-contained Evolution Lab and deployment workflow", async () => {
-  const [pagesHtml, workflow] = await Promise.all([
+test("ships a Codex-rendered Evolution Lab and deployment workflow", async () => {
+  const [pagesHtml, workflow, manifest, serviceWorker, compiler] = await Promise.all([
     readFile(new URL("../docs/index.html", import.meta.url), "utf8"),
     readFile(new URL("../.github/workflows/deploy-pages.yml", import.meta.url), "utf8"),
+    readFile(new URL("../docs/lab/genomes.json", import.meta.url), "utf8"),
+    readFile(new URL("../docs/sw.js", import.meta.url), "utf8"),
+    readFile(new URL("../scripts/compile-static-lab.mjs", import.meta.url), "utf8"),
   ]);
 
   assert.match(pagesHtml, /<!doctype html>/i);
-  assert.match(pagesHtml, /Thirty possible futures/);
-  assert.match(pagesHtml, /morphmorph\.evolution-lab\.v4/);
-  assert.match(pagesHtml, /planIndex\(x\.genes\)!==planIndex\(f\.genes\)/);
-  assert.match(pagesHtml, /founderDistance\(x,f\)>5\.7/);
-  assert.match(pagesHtml, /for\(let g=0;g<10;g\+\+\)/);
-  assert.match(pagesHtml, /Codex Build 0\.5\.0/);
-  assert.match(pagesHtml, /function anatomyCreature\(/);
-  assert.match(pagesHtml, /canvasCreature=anatomyCreature/);
-  assert.match(pagesHtml, /id="detailCanvas"/);
-  assert.match(pagesHtml, /Reject and regenerate below/);
-  assert.match(pagesHtml, /FORMS=\['winglets','claws','antennae','halo','tailfan','crystal','frills','eyes'\]/);
+  assert.match(pagesHtml, /Three lineages\. No fixed ending\./);
+  assert.match(pagesHtml, /morphmorph\.evolution-lab\.v5/);
+  assert.match(pagesHtml, /Codex Build 0\.6\.0/);
+  assert.match(pagesHtml, /Skip this generation/);
+  assert.match(pagesHtml, /generation skipped — descendants remain reviewable/i);
+  assert.match(pagesHtml, /fetch\('\.\/lab\/genomes\.json'\)/);
+  assert.match(pagesHtml, /background-size:300% 100%/);
+  assert.match(pagesHtml, /g\$\{generation\}\.webp/);
   assert.match(pagesHtml, /github\.com\/ncheewee\/morphmorph\/issues\/new/);
   assert.match(pagesHtml, /rel="manifest" href="\.\/manifest\.webmanifest"/);
   assert.match(pagesHtml, /\[hidden\]\{display:none!important\}/);
   assert.match(pagesHtml, /navigator\.serviceWorker\.register\('\.\/sw\.js'\)\.then/);
   assert.doesNotMatch(pagesHtml, /generated_images|https:\/\/morphmorph-life/);
+  const genome = JSON.parse(manifest);
+  assert.equal(genome.lineages.length, 3);
+  assert.equal(genome.rows.length, 10);
+  assert.deepEqual(genome.lineages.map(lineage => lineage.bodyPlan), [
+    "floating plant-jelly organism",
+    "compact left-facing botanical quadruped",
+    "graceful avian-reptile botanical creature",
+  ]);
+  assert.match(manifest, /"asset": "\.\/lab\/g9\.webp"/);
+  assert.match(compiler, /morphmorph-codex-static-v1/);
+  assert.match(serviceWorker, /morphmorph-pwa-v8/);
+  assert.equal((serviceWorker.match(/"\.\/lab\/g\d\.webp"/g) ?? []).length, 10);
   assert.match(workflow, /actions\/upload-pages-artifact@v3/);
   assert.match(workflow, /path: docs/);
   assert.match(workflow, /actions\/deploy-pages@v4/);
