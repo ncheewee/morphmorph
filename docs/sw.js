@@ -1,4 +1,4 @@
-const CACHE = "morphmorph-pwa-v2";
+const CACHE = "morphmorph-pwa-v3";
 const ASSETS = ["./", "./index.html", "./manifest.webmanifest", "./icon.svg"];
 
 self.addEventListener("install", event => {
