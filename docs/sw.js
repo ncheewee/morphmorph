@@ -1,4 +1,4 @@
-const CACHE = "morphmorph-pwa-v8";
+const CACHE = "morphmorph-pwa-v9";
 const ASSETS = [
   "./",
   "./index.html",

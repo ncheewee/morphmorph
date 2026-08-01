@@ -14,25 +14,25 @@
     .app{width:min(100%,980px);margin:auto;padding:max(16px,env(safe-area-inset-top)) 10px max(34px,env(safe-area-inset-bottom))}
     .top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin:3px 4px 16px}.brand{font-size:clamp(1.05rem,5vw,1.45rem);font-weight:800;letter-spacing:.14em;color:var(--cream)}.eyebrow{color:var(--muted);font:.58rem ui-monospace,SFMono-Regular,monospace;letter-spacing:.13em;text-transform:uppercase;margin-top:5px}.build{border:1px solid var(--line);border-radius:99px;color:var(--mint);font:.55rem ui-monospace,SFMono-Regular,monospace;letter-spacing:.06em;padding:7px 9px;white-space:nowrap}
     .intro{border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,rgba(15,51,62,.96),rgba(8,31,41,.94));padding:20px 22px;box-shadow:inset 0 1px rgba(255,255,255,.035),0 22px 70px rgba(0,0,0,.16)}.intro h1{margin:0 0 8px;color:var(--cream);font:500 clamp(1.75rem,6vw,2.65rem)/.98 Georgia,serif;letter-spacing:-.035em}.intro p{max-width:690px;color:#b5c9c5;font-size:.82rem;line-height:1.55;margin:0}.stats{display:flex;gap:8px;overflow:auto;padding:14px 0 0}.stats span{border:1px solid rgba(151,210,200,.18);border-radius:99px;color:var(--muted);font:.58rem ui-monospace,SFMono-Regular,monospace;padding:6px 9px;white-space:nowrap}.stats b{color:var(--mint);font-weight:700}
-    .toolbar{display:flex;align-items:center;gap:8px;margin:13px 0}.toolbar button,.drawer-actions button{border:1px solid rgba(120,222,195,.36);border-radius:12px;background:rgba(120,222,195,.1);color:var(--mint);font-size:.69rem;font-weight:750;padding:10px 12px}.toolbar .primary{margin-left:auto;background:var(--mint);color:#06202a}.toolbar button:focus-visible,.tile:focus-visible,.close:focus-visible{outline:2px solid var(--cream);outline-offset:2px}
+    .toolbar{display:flex;align-items:center;gap:8px;margin:13px 0}.toolbar button,.drawer-actions button{border:1px solid rgba(120,222,195,.36);border-radius:12px;background:rgba(120,222,195,.1);color:var(--mint);font-size:.69rem;font-weight:750;padding:10px 12px}.toolbar button[aria-pressed="true"],.drawer-actions button[aria-pressed="true"]{border-color:var(--cream);background:var(--cream);color:#15313a}.toolbar .primary{margin-left:auto;background:var(--mint);color:#06202a}.toolbar button:focus-visible,.tile:focus-visible,.close:focus-visible{outline:2px solid var(--cream);outline-offset:2px}
     .grid-shell{border:1px solid var(--line);border-radius:21px;background:linear-gradient(180deg,rgba(9,34,44,.98),rgba(5,21,30,.9));padding:5px;overflow:hidden;box-shadow:0 26px 80px rgba(0,0,0,.2)}.heads,.row{display:grid;grid-template-columns:30px repeat(3,minmax(0,1fr));gap:7px;padding:7px 7px 0}.heads{position:sticky;top:0;z-index:3;padding-bottom:7px;border-bottom:1px solid rgba(174,225,211,.08);background:rgba(8,31,41,.94);backdrop-filter:blur(14px)}.heads span{color:var(--muted);font:.54rem ui-monospace,SFMono-Regular,monospace;letter-spacing:.1em;text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.heads b{display:block;color:var(--cream);font-size:.64rem;margin-bottom:2px}.row{padding-bottom:0}.row:last-child{padding-bottom:7px}.row-num{color:#67828a;font:.52rem ui-monospace,SFMono-Regular,monospace;padding-top:10px;text-align:center}
-    .tile{position:relative;min-width:0;border:1px solid rgba(164,222,210,.19);border-radius:17px;background:#08232e;color:inherit;padding:6px;text-align:left;overflow:hidden;box-shadow:inset 0 1px rgba(255,255,255,.04),0 8px 24px rgba(0,0,0,.13);transition:transform .16s,border-color .16s,opacity .16s}.tile:hover{border-color:rgba(120,222,195,.55);transform:translateY(-2px)}.tile:active{transform:scale(.985)}.art{position:relative;width:100%;aspect-ratio:3/4;border:1px solid rgba(174,226,215,.12);border-radius:12px;background-color:#08242f;background-repeat:no-repeat;background-size:300% 100%;background-position:calc(var(--col) * 50%) center;overflow:hidden}.art:after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.025);border-radius:inherit;pointer-events:none}.tile-meta{display:flex;justify-content:space-between;gap:5px;align-items:center;padding:5px 3px 0}.tile-meta b{color:var(--cream);font-size:clamp(.57rem,1.7vw,.75rem);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.tile-meta span{color:var(--mint);font:.5rem ui-monospace,SFMono-Regular,monospace}.change{color:#9fb8b5;font-size:.51rem;line-height:1.25;padding:2px 3px 3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.skip{position:absolute;z-index:2;left:11px;top:11px;width:23px;height:23px;border:1px solid rgba(255,155,131,.62);border-radius:50%;background:rgba(6,24,33,.84);color:#ffb09e;font-size:.86rem;line-height:18px;padding:0;backdrop-filter:blur(8px)}.note-dot{position:absolute;z-index:2;right:12px;top:12px;width:7px;height:7px;border-radius:50%;background:var(--coral);box-shadow:0 0 0 3px rgba(7,27,37,.82)}.tile.is-skipped{opacity:.48}.tile.is-skipped .art:before{content:"SKIPPED";position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-8deg);border:1px solid var(--coral);border-radius:99px;background:rgba(6,23,34,.82);color:var(--coral);font:.55rem ui-monospace,SFMono-Regular,monospace;letter-spacing:.1em;padding:6px 8px}.tile.is-skipped .skip{background:var(--coral);color:#102630}
+    .tile{position:relative;min-width:0;border:1px solid rgba(164,222,210,.19);border-radius:17px;background:#08232e;color:inherit;padding:6px;text-align:left;overflow:hidden;box-shadow:inset 0 1px rgba(255,255,255,.04),0 8px 24px rgba(0,0,0,.13);transition:transform .16s,border-color .16s,opacity .16s}.tile:hover{border-color:rgba(120,222,195,.55);transform:translateY(-2px)}.tile:active{transform:scale(.985)}.art{position:relative;width:100%;aspect-ratio:3/4;border:1px solid rgba(174,226,215,.12);border-radius:12px;background-color:#08242f;overflow:hidden}.art:after{content:"";position:absolute;z-index:5;inset:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.025);border-radius:inherit;pointer-events:none}.art-layer{position:absolute;inset:0;background-repeat:no-repeat;background-size:300% 100%;background-position:calc(var(--col) * 50%) center;transition:opacity .22s ease}.art-previous{z-index:1;opacity:0}.art-current{z-index:2;opacity:1}.compare-on.compare-before .compareable .art-previous{opacity:1}.compare-on.compare-before .compareable .art-current{opacity:0}.phase-chip{display:none;position:absolute;z-index:4;right:6px;bottom:6px;border:1px solid rgba(255,241,209,.34);border-radius:99px;background:rgba(5,24,33,.78);color:var(--cream);font:.46rem ui-monospace,SFMono-Regular,monospace;letter-spacing:.09em;padding:4px 6px;backdrop-filter:blur(8px)}.compare-on .compareable .phase-after{display:block}.compare-on.compare-before .compareable .phase-after{display:none}.compare-on.compare-before .compareable .phase-before{display:block}.tile-meta{display:flex;justify-content:space-between;gap:5px;align-items:center;padding:5px 3px 0}.tile-meta b{color:var(--cream);font-size:clamp(.57rem,1.7vw,.75rem);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.tile-meta span{color:var(--mint);font:.5rem ui-monospace,SFMono-Regular,monospace}.change{color:#9fb8b5;font-size:.51rem;line-height:1.25;padding:2px 3px 3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.skip{position:absolute;z-index:6;left:11px;top:11px;width:23px;height:23px;border:1px solid rgba(255,155,131,.62);border-radius:50%;background:rgba(6,24,33,.84);color:#ffb09e;font-size:.86rem;line-height:18px;padding:0;backdrop-filter:blur(8px)}.note-dot{position:absolute;z-index:6;right:12px;top:12px;width:7px;height:7px;border-radius:50%;background:var(--coral);box-shadow:0 0 0 3px rgba(7,27,37,.82)}.tile.is-skipped{opacity:.48}.tile.is-skipped .art:before{content:"SKIPPED";position:absolute;z-index:6;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-8deg);border:1px solid var(--coral);border-radius:99px;background:rgba(6,23,34,.82);color:var(--coral);font:.55rem ui-monospace,SFMono-Regular,monospace;letter-spacing:.1em;padding:6px 8px}.tile.is-skipped .skip{background:var(--coral);color:#102630}
     .loading,.error{padding:42px 18px;text-align:center;color:var(--muted);font-size:.76rem}.error{color:#ffc1b2}
-    .scrim{position:fixed;inset:0;z-index:10;display:flex;align-items:flex-end;justify-content:center;background:rgba(0,9,15,.72);padding-top:24px}.drawer{width:min(100%,650px);max-height:calc(100dvh - 20px);overflow:auto;border:1px solid var(--line);border-bottom:0;border-radius:24px 24px 0 0;background:#0c2934;padding:16px 16px max(24px,env(safe-area-inset-bottom));box-shadow:0 -24px 80px rgba(0,0,0,.45)}.drawer-top{display:flex;justify-content:space-between;gap:12px}.drawer h2{color:var(--cream);font:500 1.55rem Georgia,serif;margin:4px 0}.close{flex:0 0 auto;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--cream);font-size:1.2rem;width:35px;height:35px}.detail-art{width:min(100%,320px);margin:11px auto 13px;aspect-ratio:3/4;border:1px solid var(--line);border-radius:20px;background-repeat:no-repeat;background-size:300% 100%;background-position:calc(var(--col) * 50%) center;background-color:#08242f}.drawer p{color:#aac1bd;font-size:.77rem;line-height:1.5;margin:9px 0}.mutation{border-left:2px solid var(--mint);padding-left:10px}.drawer label{display:block;color:var(--muted);font:.58rem ui-monospace,SFMono-Regular,monospace;letter-spacing:.08em;text-transform:uppercase;margin:13px 0 6px}.drawer textarea{width:100%;min-height:92px;resize:vertical;border:1px solid var(--line);border-radius:13px;background:#061c26;color:var(--cream);padding:11px;outline:0}.drawer textarea:focus{border-color:var(--mint)}.drawer-actions{display:flex;gap:8px;margin-top:10px}.drawer-actions .skip-drawer{border-color:rgba(255,155,131,.5);background:rgba(255,155,131,.08);color:#ffb09e}.drawer-actions .save{margin-left:auto;background:var(--mint);color:#06202a}
+    .scrim{position:fixed;inset:0;z-index:10;display:flex;align-items:flex-end;justify-content:center;background:rgba(0,9,15,.72);padding-top:24px}.drawer{width:min(100%,650px);max-height:calc(100dvh - 20px);overflow:auto;border:1px solid var(--line);border-bottom:0;border-radius:24px 24px 0 0;background:#0c2934;padding:16px 16px max(24px,env(safe-area-inset-bottom));box-shadow:0 -24px 80px rgba(0,0,0,.45)}.drawer-top{display:flex;justify-content:space-between;gap:12px}.drawer h2{color:var(--cream);font:500 1.55rem Georgia,serif;margin:4px 0}.close{flex:0 0 auto;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--cream);font-size:1.2rem;width:35px;height:35px}.detail-art{position:relative;width:min(100%,320px);margin:11px auto 13px;aspect-ratio:3/4;border:1px solid var(--line);border-radius:20px;background-color:#08242f;overflow:hidden}.drawer p{color:#aac1bd;font-size:.77rem;line-height:1.5;margin:9px 0}.mutation{border-left:2px solid var(--mint);padding-left:10px}.drawer label{display:block;color:var(--muted);font:.58rem ui-monospace,SFMono-Regular,monospace;letter-spacing:.08em;text-transform:uppercase;margin:13px 0 6px}.drawer textarea{width:100%;min-height:92px;resize:vertical;border:1px solid var(--line);border-radius:13px;background:#061c26;color:var(--cream);padding:11px;outline:0}.drawer textarea:focus{border-color:var(--mint)}.drawer-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.drawer-actions .skip-drawer{border-color:rgba(255,155,131,.5);background:rgba(255,155,131,.08);color:#ffb09e}.drawer-actions .save{margin-left:auto;background:var(--mint);color:#06202a}
     .toast{position:fixed;z-index:20;left:50%;bottom:max(20px,env(safe-area-inset-bottom));transform:translateX(-50%);border:1px solid var(--line);border-radius:99px;background:#123842;color:#e0eee8;font-size:.7rem;padding:10px 13px;box-shadow:0 12px 34px rgba(0,0,0,.35);white-space:nowrap}
     @media(max-width:520px){.app{padding-inline:6px}.intro{padding:16px}.heads,.row{grid-template-columns:23px repeat(3,minmax(0,1fr));gap:3px;padding-inline:3px}.tile{padding:3px;border-radius:12px}.art{border-radius:9px}.tile-meta{padding-inline:2px}.tile-meta b{font-size:.52rem}.change{font-size:.45rem;padding-inline:2px}.skip{left:6px;top:6px;width:20px;height:20px;line-height:15px}.note-dot{right:7px;top:7px}.toolbar button{padding:9px 8px;font-size:.62rem}.drawer{padding-inline:13px}}
-    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.tile{transition:none}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.tile,.art-layer{transition:none}}
   </style>
 </head>
 <body>
   <main class="app">
-    <header class="top"><div><div class="brand">MORPHMORPH</div><div class="eyebrow">Codex-rendered evolution study</div></div><div class="build">Codex Build 0.6.0</div></header>
+    <header class="top"><div><div class="brand">MORPHMORPH</div><div class="eyebrow">Codex-rendered evolution study</div></div><div class="build">Codex Build 0.7.0</div></header>
     <section class="intro">
       <h1>Three lineages. No fixed ending.</h1>
-      <p>A deterministic genome chose each visible mutation; Codex rendered the result at storybook fidelity while preserving lineage identity. Tap any future to inspect it, leave direction, or skip a generation that does not earn its place.</p>
+      <p>A deterministic genome chose each visible mutation; Codex rendered the result at storybook fidelity while preserving lineage identity. Turn on the comparison loop to flip every child against its parent, then inspect, annotate, or skip what does not earn its place.</p>
       <div class="stats"><span><b>3</b> distinct body plans</span><span><b>10</b> generations</span><span><b>30</b> review tiles</span><span>No paid API</span></div>
     </section>
-    <div class="toolbar"><button id="resetReview">Reset review</button><button class="primary" id="submit">Submit feedback</button></div>
+    <div class="toolbar"><button id="resetReview">Reset review</button><button id="compareToggle" aria-pressed="false">↔ Loop changes</button><button class="primary" id="submit">Submit feedback</button></div>
     <section class="grid-shell" aria-label="Three MorphMorph lineages across ten generations">
       <div class="heads"><span>GEN</span><span><b>LUMA</b>drifter</span><span><b>MORI</b>quadruped</span><span><b>SORA</b>avian</span></div>
       <div id="grid"><div class="loading">Preparing thirty possible futures…</div></div>
@@ -45,7 +45,7 @@
       <p class="mutation" id="drawerMutation"></p><p id="drawerContext"></p>
       <label for="comment">Direction for the evolution model</label>
       <textarea id="comment" maxlength="280" placeholder="What should it keep, exaggerate, soften, or never do again?"></textarea>
-      <div class="drawer-actions"><button class="skip-drawer" id="skipDrawer">Skip this generation</button><button class="save" id="saveComment">Save note</button></div>
+      <div class="drawer-actions"><button id="compareDrawer" aria-pressed="false">↔ Loop parent / child</button><button class="skip-drawer" id="skipDrawer">Skip this generation</button><button class="save" id="saveComment">Save note</button></div>
     </section>
   </div>
   <div class="toast" id="toast" hidden></div>
@@ -53,7 +53,7 @@
   (()=>{
     const KEY='morphmorph.evolution-lab.v5';
     const $=selector=>document.querySelector(selector);
-    let manifest=null,selected=null;
+    let manifest=null,selected=null,compareTimer=null,compareBefore=false;
     let state=load();
 
     function load(){
@@ -65,6 +65,7 @@
     function isSkipped(key){return state.skipped.includes(key)}
     function asset(generation){return `./lab/g${generation}.webp`}
     function artStyle(col,generation){return `--col:${col};background-image:url('${asset(generation)}')`}
+    function artLayers(col,generation){const previous=Math.max(0,generation-1);return `<span class="art-layer art-previous" style="${artStyle(col,previous)}"></span><span class="art-layer art-current" style="${artStyle(col,generation)}"></span>${generation?'<span class="phase-chip phase-before">BEFORE</span><span class="phase-chip phase-after">AFTER</span>':''}`}
     function escapeHtml(value){return String(value).replace(/[&<>'"]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]))}
     function toast(message){const node=$('#toast');node.textContent=message;node.hidden=false;clearTimeout(toast.timer);toast.timer=setTimeout(()=>node.hidden=true,2200)}
 
@@ -79,7 +80,7 @@
           button.className=`tile${isSkipped(key)?' is-skipped':''}`;
           button.dataset.col=col;button.dataset.generation=rowData.generation;
           button.setAttribute('aria-label',`${manifest.lineages[col].name}, generation ${rowData.generation}: ${creature.title}`);
-          button.innerHTML=`<div class="art" style="${artStyle(col,rowData.generation)}"></div><span class="skip" title="${isSkipped(key)?'Restore':'Skip'} generation" aria-hidden="true">×</span>${note?'<i class="note-dot"></i>':''}<div class="tile-meta"><b>${escapeHtml(creature.title)}</b><span>G${String(rowData.generation).padStart(2,'0')}</span></div><div class="change">${escapeHtml(creature.change)}</div>`;
+          button.innerHTML=`<div class="art${rowData.generation?' compareable':''}">${artLayers(col,rowData.generation)}</div><span class="skip" title="${isSkipped(key)?'Restore':'Skip'} generation" aria-hidden="true">×</span>${note?'<i class="note-dot"></i>':''}<div class="tile-meta"><b>${escapeHtml(creature.title)}</b><span>G${String(rowData.generation).padStart(2,'0')}</span></div><div class="change">${escapeHtml(creature.change)}</div>`;
           button.querySelector('.skip').onclick=event=>{event.stopPropagation();toggleSkip(col,rowData.generation)};
           button.onclick=()=>openDrawer(col,rowData.generation);
           row.append(button);
@@ -102,11 +103,11 @@
       selected={col,generation};
       const lineage=manifest.lineages[col],creature=manifest.rows[generation].creatures[col],key=tileKey(col,generation);
       $('#drawerTitle').textContent=`${lineage.name} · Gen ${String(generation).padStart(2,'0')}`;
-      const art=$('#detailArt');art.setAttribute('style',artStyle(col,generation));art.setAttribute('aria-label',`${lineage.name} generation ${generation}`);
+      const art=$('#detailArt');art.className=`detail-art${generation?' compareable':''}`;art.innerHTML=artLayers(col,generation);art.setAttribute('aria-label',`${lineage.name} generation ${generation}`);
       $('#drawerMutation').textContent=generation===0?'Founder anchor — the immutable identity for this branch.':`${creature.mutation}: ${creature.change}.`;
       $('#drawerContext').textContent=`Body plan: ${lineage.bodyPlan}. Accumulated mutations: ${creature.accumulated.length?creature.accumulated.join(' · '):'none yet'}.`;
       $('#comment').value=state.comments[key]||'';
-      $('#drawerScrim').hidden=false;document.body.style.overflow='hidden';updateDrawerSkipLabel();
+      $('#drawerScrim').hidden=false;document.body.style.overflow='hidden';updateDrawerSkipLabel();updateCompareButtons();
     }
     function updateDrawerSkipLabel(){
       if(!selected)return;const button=$('#skipDrawer'),key=tileKey(selected.col,selected.generation);
@@ -115,13 +116,25 @@
     }
     function closeDrawer(){$('#drawerScrim').hidden=true;document.body.style.overflow='';selected=null}
 
+    function updateCompareButtons(){
+      const enabled=Boolean(state.compare),main=$('#compareToggle'),drawer=$('#compareDrawer');
+      main.setAttribute('aria-pressed',String(enabled));main.textContent=enabled?'■ Stop loop':'↔ Loop changes';
+      drawer.setAttribute('aria-pressed',String(enabled));drawer.textContent=enabled?'■ Stop comparison':'↔ Loop parent / child';drawer.disabled=selected?.generation===0;
+    }
+    function setCompare(enabled){
+      state.compare=enabled;save();clearInterval(compareTimer);compareTimer=null;compareBefore=false;
+      document.body.classList.toggle('compare-on',enabled);document.body.classList.remove('compare-before');
+      if(enabled&&!document.hidden)compareTimer=setInterval(()=>{compareBefore=!compareBefore;document.body.classList.toggle('compare-before',compareBefore)},1500);
+      updateCompareButtons();
+    }
+
     function report(){
       const sections=manifest.lineages.map((lineage,col)=>{
         const notes=manifest.rows.flatMap(row=>{const key=tileKey(col,row.generation),note=state.comments[key];return note?[`- Gen ${String(row.generation).padStart(2,'0')} — ${row.creatures[col].title}: ${note}`]:[]});
         const skipped=manifest.rows.filter(row=>isSkipped(tileKey(col,row.generation))).map(row=>`Gen ${String(row.generation).padStart(2,'0')} ${row.creatures[col].title}`);
         return `## ${lineage.name} — ${lineage.bodyPlan}\n\nSkipped: ${skipped.length?skipped.join(', '):'none'}\n\n${notes.length?notes.join('\n'):'No comments.'}`;
       });
-      return `# MorphMorph Codex Evolution Lab review\n\nGenome: \`${manifest.seed}\`\nBuild: 0.6.0\n\n${sections.join('\n\n')}\n\n---\nGenerated by the MorphMorph review PWA.`;
+      return `# MorphMorph Codex Evolution Lab review\n\nGenome: \`${manifest.seed}\`\nBuild: 0.7.0\n\n${sections.join('\n\n')}\n\n---\nGenerated by the MorphMorph review PWA.`;
     }
 
     $('#closeDrawer').onclick=closeDrawer;
@@ -129,10 +142,13 @@
     document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!$('#drawerScrim').hidden)closeDrawer()});
     $('#saveComment').onclick=()=>{if(!selected)return;const key=tileKey(selected.col,selected.generation),note=$('#comment').value.trim();if(note)state.comments[key]=note;else delete state.comments[key];save();render();closeDrawer();toast(note?'Note saved':'Note cleared')};
     $('#skipDrawer').onclick=()=>{if(!selected||selected.generation===0)return;toggleSkip(selected.col,selected.generation)};
-    $('#resetReview').onclick=()=>{if(confirm('Clear all notes and skipped generations?')){state={version:1,comments:{},skipped:[]};render();toast('Review reset')}};
+    $('#compareToggle').onclick=()=>setCompare(!state.compare);
+    $('#compareDrawer').onclick=()=>setCompare(!state.compare);
+    document.addEventListener('visibilitychange',()=>{if(state.compare)setCompare(true)});
+    $('#resetReview').onclick=()=>{if(confirm('Clear all notes and skipped generations?')){const compare=state.compare;state={version:1,comments:{},skipped:[],compare};render();toast('Review reset')}};
     $('#submit').onclick=()=>{const title=`MorphMorph Evolution Lab review — ${new Date().toISOString().slice(0,10)}`;window.open(`https://github.com/ncheewee/morphmorph/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(report())}`,'_blank','noopener');toast('GitHub issue draft opened')};
 
-    fetch('./lab/genomes.json').then(response=>{if(!response.ok)throw new Error(`HTTP ${response.status}`);return response.json()}).then(data=>{manifest=data;render()}).catch(error=>{$('#grid').innerHTML=`<div class="error">The evolution manifest could not load. ${escapeHtml(error.message)}</div>`});
+    fetch('./lab/genomes.json').then(response=>{if(!response.ok)throw new Error(`HTTP ${response.status}`);return response.json()}).then(data=>{manifest=data;render();setCompare(Boolean(state.compare))}).catch(error=>{$('#grid').innerHTML=`<div class="error">The evolution manifest could not load. ${escapeHtml(error.message)}</div>`});
     if('serviceWorker'in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').then(registration=>registration.update()));
   })();
   </script>

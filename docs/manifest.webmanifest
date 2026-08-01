@@ -2,7 +2,7 @@
   "name": "MorphMorph Evolution Lab",
   "short_name": "Morph Lab",
   "description": "Review three beautiful generative MorphMorph lineages across ten generations.",
-  "start_url": "./?pwa=0.6.0",
+  "start_url": "./?pwa=0.7.0",
   "scope": "./",
   "display": "standalone",
   "background_color": "#061725",

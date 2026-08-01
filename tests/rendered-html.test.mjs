@@ -73,9 +73,14 @@ test("ships a Codex-rendered Evolution Lab and deployment workflow", async () =>
   assert.match(pagesHtml, /<!doctype html>/i);
   assert.match(pagesHtml, /Three lineages\. No fixed ending\./);
   assert.match(pagesHtml, /morphmorph\.evolution-lab\.v5/);
-  assert.match(pagesHtml, /Codex Build 0\.6\.0/);
+  assert.match(pagesHtml, /Codex Build 0\.7\.0/);
   assert.match(pagesHtml, /Skip this generation/);
   assert.match(pagesHtml, /generation skipped — descendants remain reviewable/i);
+  assert.match(pagesHtml, /id="compareToggle" aria-pressed="false"/);
+  assert.match(pagesHtml, /function setCompare\(enabled\)/);
+  assert.match(pagesHtml, /compareBefore=!compareBefore/);
+  assert.match(pagesHtml, /Loop parent \/ child/);
+  assert.match(pagesHtml, /phase-chip phase-before/);
   assert.match(pagesHtml, /fetch\('\.\/lab\/genomes\.json'\)/);
   assert.match(pagesHtml, /background-size:300% 100%/);
   assert.match(pagesHtml, /g\$\{generation\}\.webp/);
@@ -94,7 +99,7 @@ test("ships a Codex-rendered Evolution Lab and deployment workflow", async () =>
   ]);
   assert.match(manifest, /"asset": "\.\/lab\/g9\.webp"/);
   assert.match(compiler, /morphmorph-codex-static-v1/);
-  assert.match(serviceWorker, /morphmorph-pwa-v8/);
+  assert.match(serviceWorker, /morphmorph-pwa-v9/);
   assert.equal((serviceWorker.match(/"\.\/lab\/g\d\.webp"/g) ?? []).length, 10);
   assert.match(workflow, /actions\/upload-pages-artifact@v3/);
   assert.match(workflow, /path: docs/);
