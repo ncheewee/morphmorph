@@ -72,7 +72,9 @@ test("ships a self-contained GitHub Pages edition and deployment workflow", asyn
   assert.match(pagesHtml, /morphmorph\.pages\.v1/);
   assert.match(pagesHtml, /function care\(/);
   assert.match(pagesHtml, /function evolve\(/);
-  assert.match(pagesHtml, /Codex Build 0\.1\.1 · installable PWA/);
+  assert.match(pagesHtml, /Codex Build 0\.1\.2 · installable PWA/);
+  assert.match(pagesHtml, /Evolve · GEN/);
+  assert.match(pagesHtml, /q\.tail=clamp\(q\.tail\+\.16/);
   assert.match(pagesHtml, /rel="manifest" href="\.\/manifest\.webmanifest"/);
   assert.match(pagesHtml, /\[hidden\]\{display:none!important\}/);
   assert.match(pagesHtml, /navigator\.serviceWorker\.register\('\.\/sw\.js'\)/);
