@@ -60,3 +60,21 @@ test("contains the procedural evolution and device-local persistence loop", asyn
   assert.doesNotMatch(page, /_sites-preview|SkeletonPreview/);
   assert.doesNotMatch(css, /url\([^)]*generated_images/);
 });
+
+test("ships a self-contained GitHub Pages edition and deployment workflow", async () => {
+  const [pagesHtml, workflow] = await Promise.all([
+    readFile(new URL("../docs/index.html", import.meta.url), "utf8"),
+    readFile(new URL("../.github/workflows/deploy-pages.yml", import.meta.url), "utf8"),
+  ]);
+
+  assert.match(pagesHtml, /<!doctype html>/i);
+  assert.match(pagesHtml, /<canvas id="creature"/);
+  assert.match(pagesHtml, /morphmorph\.pages\.v1/);
+  assert.match(pagesHtml, /function care\(/);
+  assert.match(pagesHtml, /function evolve\(/);
+  assert.match(pagesHtml, /Codex Build 0\.1\.0 · GitHub Pages/);
+  assert.doesNotMatch(pagesHtml, /generated_images|https:\/\/morphmorph-life/);
+  assert.match(workflow, /actions\/upload-pages-artifact@v3/);
+  assert.match(workflow, /path: docs/);
+  assert.match(workflow, /actions\/deploy-pages@v4/);
+});
