@@ -69,12 +69,13 @@ test("ships a self-contained Evolution Lab and deployment workflow", async () =>
 
   assert.match(pagesHtml, /<!doctype html>/i);
   assert.match(pagesHtml, /Thirty possible futures/);
-  assert.match(pagesHtml, /morphmorph\.evolution-lab\.v3/);
-  assert.match(pagesHtml, /founderDistance\(x,f\)>4\.25/);
+  assert.match(pagesHtml, /morphmorph\.evolution-lab\.v4/);
+  assert.match(pagesHtml, /planIndex\(x\.genes\)!==planIndex\(f\.genes\)/);
+  assert.match(pagesHtml, /founderDistance\(x,f\)>5\.7/);
   assert.match(pagesHtml, /for\(let g=0;g<10;g\+\+\)/);
-  assert.match(pagesHtml, /Codex Build 0\.4\.0/);
-  assert.match(pagesHtml, /function studioCreature\(/);
-  assert.match(pagesHtml, /canvasCreature=studioCreature/);
+  assert.match(pagesHtml, /Codex Build 0\.5\.0/);
+  assert.match(pagesHtml, /function anatomyCreature\(/);
+  assert.match(pagesHtml, /canvasCreature=anatomyCreature/);
   assert.match(pagesHtml, /id="detailCanvas"/);
   assert.match(pagesHtml, /Reject and regenerate below/);
   assert.match(pagesHtml, /FORMS=\['winglets','claws','antennae','halo','tailfan','crystal','frills','eyes'\]/);
