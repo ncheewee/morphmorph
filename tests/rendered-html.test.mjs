@@ -61,23 +61,21 @@ test("contains the procedural evolution and device-local persistence loop", asyn
   assert.doesNotMatch(css, /url\([^)]*generated_images/);
 });
 
-test("ships a self-contained GitHub Pages edition and deployment workflow", async () => {
+test("ships a self-contained Evolution Lab and deployment workflow", async () => {
   const [pagesHtml, workflow] = await Promise.all([
     readFile(new URL("../docs/index.html", import.meta.url), "utf8"),
     readFile(new URL("../.github/workflows/deploy-pages.yml", import.meta.url), "utf8"),
   ]);
 
   assert.match(pagesHtml, /<!doctype html>/i);
-  assert.match(pagesHtml, /<canvas id="creature"/);
-  assert.match(pagesHtml, /morphmorph\.pages\.v1/);
-  assert.match(pagesHtml, /function care\(/);
-  assert.match(pagesHtml, /function evolve\(/);
-  assert.match(pagesHtml, /Codex Build 0\.1\.4 · installable PWA/);
-  assert.match(pagesHtml, /Evolve · GEN/);
-  assert.match(pagesHtml, /forms=\['winglets','claws','antennae','halo','tailfan','crystal'\]/);
-  assert.match(pagesHtml, /canvas id="mutations"/);
-  assert.match(pagesHtml, /traits=\(available\.length\?available:forms\)/);
-  assert.match(pagesHtml, /emerged\.has\('winglets'\)/);
+  assert.match(pagesHtml, /Thirty possible futures/);
+  assert.match(pagesHtml, /morphmorph\.evolution-lab\.v1/);
+  assert.match(pagesHtml, /lines:\[makeLine\(seed\(\)\),makeLine\(seed\(\)\),makeLine\(seed\(\)\)\]/);
+  assert.match(pagesHtml, /for\(let g=0;g<10;g\+\+\)/);
+  assert.match(pagesHtml, /Codex Build 0\.2\.0/);
+  assert.match(pagesHtml, /Reject and regenerate below/);
+  assert.match(pagesHtml, /FORMS=\['winglets','claws','antennae','halo','tailfan','crystal','frills','eyes'\]/);
+  assert.match(pagesHtml, /github\.com\/ncheewee\/morphmorph\/issues\/new/);
   assert.match(pagesHtml, /rel="manifest" href="\.\/manifest\.webmanifest"/);
   assert.match(pagesHtml, /\[hidden\]\{display:none!important\}/);
   assert.match(pagesHtml, /navigator\.serviceWorker\.register\('\.\/sw\.js'\)/);

@@ -1,7 +1,7 @@
 {
-  "name": "MorphMorph",
-  "short_name": "MorphMorph",
-  "description": "Raise a one-of-a-kind generative lifeform.",
+  "name": "MorphMorph Evolution Lab",
+  "short_name": "Morph Lab",
+  "description": "Review generative MorphMorph evolution lineages.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
