@@ -1,0 +1,13 @@
+{
+  "name": "MorphMorph",
+  "short_name": "MorphMorph",
+  "description": "Raise a one-of-a-kind generative lifeform.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#061725",
+  "theme_color": "#061725",
+  "icons": [
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
